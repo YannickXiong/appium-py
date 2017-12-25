@@ -13,6 +13,7 @@ desired_caps['appActivity'] = 'io.hx58wallet.MainActivity'
 desired_caps['resetKeyboard'] = True    #
 desired_caps['unicodeKeyboard'] = True  # 中文输入
 desired_caps['automationName'] = 'Uiautomator2'
+desired_caps['udid'] = "emulator-5556"
 
 driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_caps)
 driver.launch_app()

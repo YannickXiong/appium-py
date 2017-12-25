@@ -1,3 +1,4 @@
+# coding=utf-8
 from appium import webdriver
 from time import sleep
 
@@ -8,7 +9,6 @@ desired_caps["platformVersion"] = "5.1.1"
 desired_caps['deviceName'] = '58 Wallet'
 desired_caps['appPackage'] = 'io.hx58wallet'
 desired_caps['appActivity'] = 'io.hx58wallet.MainActivity'
-
 
 driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_caps)
 driver.launch_app()
